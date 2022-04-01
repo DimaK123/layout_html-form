@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
-
     <form 
       action="https://mate-academy-form-lesson.herokuapp.com/create-application" 
       method="post"
@@ -51,7 +49,7 @@
         </label>
 
         <label class="formLabel">
-          Full date of bith:
+          Full date of birth:
           <input type="date" name="Bithday">
         </label>
 
@@ -123,7 +121,11 @@
 
         <label class="formLabel">
           What time do you go to bed?
-          <input type="time" name="Time">
+          <input 
+            type="time" 
+            name="Time" 
+            step="2"
+          >
         </label>
 
         <label class="formLabel">
@@ -141,6 +143,7 @@
             name="RateOfWork" 
             min="1" 
             max="10"
+            value="1"
           >
         </label>
       </fieldset>
@@ -153,16 +156,16 @@
           Comments:
           <textarea 
             name="Comments" 
-            cols="25" 
-            rows="3"
+            cols="30" 
+            rows="2"
           ></textarea>
         </label>
 
         <label>
           Would you recommend us?
           <select name="Reccomend">
-            <option value="Yes">Yes</option>
-            <option value="Yes of course">Yes of course</option>
+            <option value="yes">Yes</option>
+            <option value="yes of course">Yes of course</option>
           </select>
         </label>
       </fieldset>
